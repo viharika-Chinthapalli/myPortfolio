@@ -6,7 +6,13 @@ require('dotenv').config();
 
 // server used to send send emails
 const app = express();
-app.use(cors({ origin: "*" }));
+app.use(cors(
+  { 
+    origin: ["https://my-portfolio-frontend-olive.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 app.use("/", router);
 const port = process.env.PORT || 5000;
