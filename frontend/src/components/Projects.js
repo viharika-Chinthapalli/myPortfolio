@@ -128,7 +128,7 @@ export const Projects = () => {
                           <h6>Projects</h6>
                           <p>
 
-                          <ul >
+                          <ul className="list-unstyled">
                             <li>Employee Management App</li>
                             <li>HashMarket</li>
                             <li>EmoQuotes Hub</li>
