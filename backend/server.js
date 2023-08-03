@@ -6,7 +6,12 @@ require('dotenv').config();
 
 // server used to send send emails
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: "https://64cb4ba325bdb044598f4ad7--loquacious-pegasus-1e664d.netlify.app",
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", router);
 const port = process.env.PORT || 5000;
