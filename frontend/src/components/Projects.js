@@ -137,6 +137,11 @@ export const Projects = () => {
                           </ul>
                           </p>
                         </Container>
+                        <Container className="text-center">
+                          <h3>Freelancer</h3>
+                          <h6>Houpd Organization</h6>
+                          <p>Developed an MVP inventory management app using Next.js</p>
+                        </Container>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
