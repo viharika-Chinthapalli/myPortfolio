@@ -1,9 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.jpg";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -11,28 +10,22 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Internet Banking Application",
+      description:
+        "An internet banking application allows users to securely manage their bank accounts, conduct transactions, and pay bills online, providing 24/7 access to financial services from anywhere.",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Credit Card Onboarding",
+      description:
+        "Developed a seamless credit card onboarding application featuring an intuitive interface, secure payment processing, and easy navigation for browsing and purchasing products.",
+      imgUrl: projImg1,
+    },
+    {
       title: "Employee Management App",
       description:
         "Developed an Employee Management Application with frontend and backend to enhance data management, and improve overall organizational efficency.",
       imgUrl: projImg3,
-    },
-    {
-      title: "EmoQuotes Hub",
-      description:
-        "Developed a website where, when clicked on an emotion, the quotes will be displayed for that particular user emotion.",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Hash Market",
-      description:
-        "Developed a user-friendly shopping app with backend integration, secure payments, and effortless browsing and purchasing capabilities.",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Transformer Health Monitoring System Using IOT",
-      description:
-        "Developed an IoT-based Transformer Health Monitoring System for continuous performance monitoring and optimized maintenance, improving reliability.",
-      imgUrl: projImg4,
     },
   ];
 
@@ -51,7 +44,7 @@ export const Projects = () => {
                   <h2>Projects</h2>
                   <p>
                     In my portfolio, I proudly present a series of full-stack
-                    development projects that harness the power of React,
+                    development projects that harness the power of ReactJS, Javascript, Typescript
                     Node.js, Express, and MongoDB. With these technologies, I
                     create robust and interactive web applications that
                     seamlessly connect frontend and backend functionalities.
@@ -77,7 +70,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Education</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Internships</Nav.Link>
+                        <Nav.Link eventKey="third">Experience</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -123,18 +116,28 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Container className="text-center">
+                          <h3>Frontend Developer At Builder.ai</h3>
+                          <h6>Worked on various projects as a Frontend Developer.</h6>
+                        </Container>
+                        <Container className="text-center">
+                          <h3>Frontend Developer At Crewscale</h3>
+                          <h6>Worked on Webflow designs for a product of the Crewscale organization called Beanbag.</h6>
+                          <a href="https://www.beanbag.ai/">BeanBag</a><br />
+                          <a href="https://www.crewscale.com/">Crewscale</a>
+                        </Container>
+                        <Container className="text-center">
                           <h2>Internships</h2>
                           <h3>Full Stack Developer At HashInsert [6 months]</h3>
                           <h6>Projects</h6>
                           <p>
 
-                          <ul className="list-unstyled">
-                            <li>Employee Management App</li>
-                            <li>HashMarket</li>
-                            <li>EmoQuotes Hub</li>
-                            <li>Todo-App</li>
-                            <li>Notes-App</li>
-                          </ul>
+                            <ul className="list-unstyled">
+                              <li>Employee Management App</li>
+                              <li>HashMarket</li>
+                              <li>EmoQuotes Hub</li>
+                              <li>Todo-App</li>
+                              <li>Notes-App</li>
+                            </ul>
                           </p>
                         </Container>
                         <Container className="text-center">
